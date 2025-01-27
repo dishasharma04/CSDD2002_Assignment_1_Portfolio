@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #003153; /* Prussian Blue */
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+header p {
+    font-style: italic;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #003153; /* Prussian Blue */
+    margin-bottom: 10px;
+}
+
+a {
+    color: #B0E0E6; /* Powder Blue */
+}
+
+h3 {
+    margin-bottom: 5px;
+}
+
+ul {
+    list-style-type: disc; /* Bulleted list */
+    padding-left: 20px;  /* Add padding to space the bullets from the text */
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+
+/* Flexbox for Qualifications Section */
+.qualifications .skills {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.qualifications .skill {
+    flex: 1;
+    min-width: 250px;
+}
+
+/* Grid Layout for Education Section */
+.education {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.education ul {
+    grid-column: span 2;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    .qualifications .skills {
+        flex-direction: column;
+    }
+
+    .education {
+        grid-template-columns: 1fr;
+    }
+}
